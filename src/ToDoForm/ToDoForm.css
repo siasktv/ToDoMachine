@@ -1,0 +1,118 @@
+form {
+    width: 90%;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 36px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 20px 24px 0px #000000;
+    border: 2px solid #000000;
+  }
+  
+  label {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1E1E1F;
+    margin-bottom: 26px;
+  }
+  
+  textarea {
+    background-color: #F9FBFC;
+    border: 2px solid #202329;
+    border-radius: 8px;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+    color: #1E1E1F;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+    height: 96px;
+    width: calc(100% - 25px);
+  }
+  textarea::placeholder {
+    color: #A5A5A5;
+    font-family: 'Montserrat';
+    font-weight: 400;
+  }
+  textarea:focus {
+    outline-color: #9b36b7;
+  }
+  
+  .ToDoForm-buttonContainer {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .ToDoForm-button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    color: #202329;
+    font-weight: 400;
+    width: 120px;
+    height: 48px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    transition: 0.4s;
+  }
+  .ToDoForm-button--add {
+    background: #8ee4fb;
+  }
+  .ToDoForm-button--add:hover {
+    background: #25d0ff;
+  }
+  .ToDoForm-button--cancel {
+    background: #ff8684;
+  }
+  .ToDoForm-button--cancel:hover {
+    background:  #ef3835;
+  }
+  
+  .star{
+    height: 300px;
+    width: 320px;
+    top: 60px;
+    position: absolute;
+  }
+  .emoji {
+    right: 49%; 
+    transform: translateX(50%); 
+    top: 172px;
+    position: absolute;
+    font-size: 50px;
+  }
+  
+  
+  @media (max-width: 930px) {
+    form {
+      width: 64%;
+      padding: 32px 36px;
+      border-radius: 8px;
+      box-shadow: 20px 24px 0px #000000;
+      border: 2px solid #000000;
+    }
+    label {
+      font-size: 23px;
+    }
+  
+    .ToDoForm-buttonContainer {
+      justify-content: space-between;
+    }  
+  
+    .star{
+      height: 200px;
+      width: 220px;
+      bottom: calc(100% - 60px);
+      position: absolute;
+    }
+    .emoji {
+      right: 47%;
+      top: 130px;
+      font-size: 40px;
+    }
+  }

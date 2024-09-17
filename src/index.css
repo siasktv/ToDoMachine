@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: #1E1E1F;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  background: radial-gradient(ellipse at 0% 125%,
+    #005399 12%,
+    #9b36b7 27%,
+    #d92e7f 40%,
+    #fffb00 70%,
+    #6fc104 85%
+  );
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  font-size: 57px;
+  margin: 24px 0px 16px;
+}
+
+
+@media (max-width: 930px) {
+  body {
+    background: radial-gradient(circle at 50% 120%, 
+      #005399 12%, 
+      #9b36b7 27%, 
+      #d92e7f 45%, 
+      #fffb00 70%, 
+      #6fc104 89% 
+    );
+  }
+  h1 {
+    font-size: 57px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+}
